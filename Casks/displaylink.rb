@@ -1,6 +1,6 @@
 cask 'displaylink' do
-  version '4.1.11,1085'
-  sha256 '14b6186fc3a9b202d0fbafde742e8d357e60427b9a6f1f6ee52ebbd478e729d0'
+  version '5.0.1,1257'
+  sha256 'deb7ad535987bdaf1358f2a806b8f66a5caa5b7c7843e9029b33e30cf8435b4d'
 
   url "https://www.displaylink.com/downloads/file?id=#{version.after_comma}",
       data:  {
@@ -11,7 +11,7 @@ cask 'displaylink' do
   name 'DisplayLink USB Graphics Software'
   homepage 'https://www.displaylink.com/'
 
-  container nested: "DisplayLink Installer #{version.before_comma}.dmg"
+  container nested: "DisplayLink USB Graphics Software for macOS #{version.before_comma}.dmg"
 
   pkg 'DisplayLink Software Installer.pkg'
 
